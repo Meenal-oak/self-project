@@ -67,7 +67,7 @@ void divide(int *arr, int si, int ei)
 
 int main()
 {
-    int arr[] = {23, 4, 6, 66, 7};
+    int arr[] = {23, 45, 6, 66, 7};
     int n = 5;
     divide(arr, 0, n - 1);
 
