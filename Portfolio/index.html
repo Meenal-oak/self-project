@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5eb752f94a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo">
+          <ul>
+            <!--<li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li> -->
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Backend Developer</p>
+          <h1>Hi, I'm  <span>Meenal</span> <br>Gupta From India</h1>
+        </div>
+      </div>
+    </div>
+    <!------------------about--------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am 3rd Year Dual Degree student in Agriculture and Food Engineering, aspiring Software Engineer specializing in building exceptional digital experiences. Currently, I'm focused on doing Python project which involve use of MySQL. Front-end Development is a new area in my end, looking forward to the amazing experiences in this new world.
+            </p>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Software Engineer</span><br>Bulding and Designing Websites</li>
+                <li><span>Backend</span><br>Bulding Website Algorithm</li>
+                <li><span>Frontend</span><br>Designing Website</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2024</span><br> Self Project</li>
+                <li><span>2023</span><br> Self project</li>
+                <li><span>2022</span><br> Course project</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023-Current</span><br>B.Tech from IIT Kharagpur</li>
+                <li><span>2020</span><br>Couching from ALLEN Jaipur</li>
+                <li><span>2018</span><br>Schooling from SPS Jaipur</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------services------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>This is the Skill I am currenlty engaged in and trying to learn. Web design coems under frontend Developer. It reflect what the user will see when they acess our siteor app </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>This is the Skill I am currenlty engaged in and trying to learn. Web design coems under frontend Developer. It reflect what the user will see when they acess our siteor app </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>This is the Skill I am currenlty engaged in and trying to learn. Web design coems under frontend Developer. It reflect what the user will see when they acess our siteor app </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+    </script>
+
+  </body>
+</html>
